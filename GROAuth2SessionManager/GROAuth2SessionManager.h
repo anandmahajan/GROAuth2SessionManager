@@ -36,11 +36,9 @@
 
  @see RFC 6749 The OAuth 2.0 Authorization Framework: http://tools.ietf.org/html/rfc6749
  */
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
-@interface GROAuth2SessionManager : AFHTTPSessionManager
-#else
+ #import "AFHTTPRequestOperationManager.h"
 @interface GROAuth2SessionManager : AFHTTPRequestOperationManager
-#endif
+
 
 ///------------------------------------------
 /// @name Accessing OAuth 2 Client Properties
